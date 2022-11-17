@@ -14,7 +14,7 @@ const sumElements = (arr) => arr.reduce((sum, item) => sum + item, 0)
 const whatever = (arr) => arr.map(item => item**2 + 3)
 const fireOrMore = (arr) => arr.filter(result => result.length <= 5 && result.includes('ek', result.length-2));
 const onlyEvenNumbers = (arr) => arr.filter((n) => n % 2 == 0);
-const smallestNumber = (arr) => arr.reduce((currSmall = arr[0], newNumber)=> currSmall > newNumber ? newNumber : currSmall); 
+const smallestNumber = (arr) => arr.reduce((currSmall = arr[0], newNumber) => currSmall > newNumber ? newNumber : currSmall); 
 
 console.log(substractFromInitial);
 console.log(mergeTwoArrays(arr1, arr2));
