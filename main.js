@@ -1,5 +1,5 @@
-const arr1 = ["Marek", "Czarek"];
-const arr2 = ["Darek", "Zarek", "Tarek", "Garek", "Zarek"];
+const arr1 = ["Anna", "Maria"];
+const arr2 = ["Adam", "Marek", "Bartek", "Tomek", "Mariusz"];
 const numbers = [1,2,4,5,8,9];
 
 let initialValue = 0;
@@ -12,6 +12,8 @@ const lastItem = (arr) => arr.reverse()[0];
 const filteredArray = (arr, value) => arr.filter(result => result === value);
 const sumElements = (arr) => arr.reduce((sum, item) => sum + item, 0)
 const whatever = (arr) => arr.map(item => item**2 + 3)
+const fireOrMore = (arr) => arr.filter(result => result.length <= 5 && result.includes('ek', result.length-2));
+const onlyEvenNumbers = (array) => array.filter((n) => n % 2 == 0);
 
 console.log(substractFromInitial);
 console.log(mergeTwoArrays(arr1, arr2));
@@ -19,3 +21,6 @@ console.log(lastItem(arr2));
 console.log(filteredArray(arr2, "Zarek"));
 console.log(sumElements(numbers))
 console.log(whatever(numbers))
+console.log(fireOrMore(arr2))
+console.log(onlyEvenNumbers(numbers))
+console.log(smallestNumber(numbers))
